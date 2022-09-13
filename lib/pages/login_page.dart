@@ -54,11 +54,13 @@ class _LogInState extends State<LogIn> {
                     style: textsmall10),
                     SizedBox(height: 20,),
                     Container(
-                      margin: EdgeInsets.all(15),
+                      height: 60,
+                      width: 325,
+                      margin: EdgeInsets.all(5),
                       child: TextFormField(
                         controller: textController,
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 20,
                           color: Colors.blue,
                           fontWeight: FontWeight.w600,
                         ),
@@ -72,7 +74,7 @@ class _LogInState extends State<LogIn> {
                           //add prefix icon
                           prefixIcon:const Icon(
                             Icons.person_outline_rounded,
-                            color: Colors.grey,
+                            color: Colors.indigo,
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(5),
@@ -87,7 +89,7 @@ class _LogInState extends State<LogIn> {
                           hintText: 'XXXXXXXX',
                           hintStyle: TextStyle(
                             color: Colors.grey,
-                            fontSize: 16,
+                            fontSize: 25,
                             fontFamily: "verdana_regular",
                             fontWeight: FontWeight.w400,
                           ),
@@ -103,19 +105,25 @@ class _LogInState extends State<LogIn> {
                       ),
 
                     ),
-                    ElevatedButton(onPressed: (){},
+                    SizedBox(height: 10,),
+                    Container(
+                      height: 40,
+                      width: 325,
+                      child: ElevatedButton(onPressed: (){},
 
-                        style: ElevatedButton.styleFrom(
-                          elevation: 10,
-                          shape: new RoundedRectangleBorder(
-                            borderRadius: new BorderRadius.circular(30),
-                            side: BorderSide(color: Colors.indigo)
+                          style: ElevatedButton.styleFrom(
+                            elevation: 10,
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(5),
+                              side: BorderSide(color: Colors.indigo)
+
+                            ),
+                            primary: Colors.indigo
 
                           ),
-                          primary: Colors.indigo
-
-                        ),
-                        child: Text('Continue'))
+                          child: Text('Continue')),
+                    ),
+                    
                   ],
                 ),
               ),
