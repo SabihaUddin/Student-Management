@@ -39,22 +39,24 @@ class _LogInState extends State<LogIn> {
                   color: Colors.amber.shade100.withOpacity(0.8),
                 ),
                 child: Column(
-                  mainAxisAlignment:MainAxisAlignment.start,
                   children:  [
-                    Text(
-                      'Student LogIn',style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.indigo
-                    ),
+                    Align(
+                      alignment:Alignment.centerLeft,
+                      child: Text(
+                        'Student LogIn',style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.indigo
+                      ),
 
+                      ),
                     ),
                     SizedBox(height: 50,),
                     Text("Knoledge is power.\n Enhance this power with Institute Manager",
                     style: textsmall10),
-                    SizedBox(height: 20,),
+                    SizedBox(height: 30,),
                     Container(
-                      height: 60,
+                      height: 50,
                       width: 325,
                       margin: EdgeInsets.all(5),
                       child: TextFormField(
@@ -89,7 +91,7 @@ class _LogInState extends State<LogIn> {
                           hintText: 'XXXXXXXX',
                           hintStyle: TextStyle(
                             color: Colors.grey,
-                            fontSize: 25,
+                            fontSize: 157899,
                             fontFamily: "verdana_regular",
                             fontWeight: FontWeight.w400,
                           ),
@@ -107,7 +109,7 @@ class _LogInState extends State<LogIn> {
                     ),
                     SizedBox(height: 10,),
                     Container(
-                      height: 40,
+                      height: 45,
                       width: 325,
                       child: ElevatedButton(onPressed: (){},
 
@@ -123,9 +125,26 @@ class _LogInState extends State<LogIn> {
                           ),
                           child: Text('Continue')),
                     ),
-                    
+                    Expanded(
+                      child: Padding(
+                    padding: const EdgeInsets.only(
+                    left: 60.0, right: 20.0, top: 10.0),
+                    child: Container(
+                      alignment: Alignment.bottomCenter,
+                      height: 90.0,
+                      child: const Text(
+                        'Not registered yet? Please contact to your Educational Institudte for your ID',
+                        style: TextStyle(
+                            fontSize: 13.0, color: Colors.indigo,
+                      ),
+                    )
+                      )
+                    )
+                    )
                   ],
+
                 ),
+
               ),
             ],
           )
