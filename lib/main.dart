@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:student_management/pages/login_page.dart';
+import 'package:student_management/optimized_views/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LogIn(),
+      home: const LogIn(),
     );
   }
 }

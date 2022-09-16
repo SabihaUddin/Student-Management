@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:student_management/utils/text.dart';
 
-class LogIn extends StatefulWidget {
-  const LogIn({Key? key}) : super(key: key);
+class LogInPage extends StatefulWidget {
+  const LogInPage({Key? key}) : super(key: key);
 
   @override
-  State<LogIn> createState() => _LogInState();
+  State<LogInPage> createState() => _LogInPageState();
 }
 
-class _LogInState extends State<LogIn> {
+class _LogInPageState extends State<LogInPage> {
    final TextEditingController textController=  TextEditingController();
 
   @override
